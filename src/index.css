@@ -1,0 +1,196 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#header {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header #logo {
+  color: white;
+  position: relative;
+  font-size: 35px;
+  margin-left: 15px;
+  cursor: pointer;
+  font-family: Comic Sans MS;
+}
+
+#header #button {
+  position: absolute;
+  right: 0;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  cursor: pointer;
+  margin-right: 80px;
+}
+
+#header #button i {
+  font-weight: bold;
+  font-size: 30px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#header #button #badge {
+  background-color: white;
+  padding: 2px 16px;
+  border-radius: 20px;
+}
+
+#summary {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: capitalize;
+  height: 200px;
+  width: 50%;
+  background-color: #fbab7e;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+#summary #head {
+  color: white;
+  font-size: 32px;
+}
+
+#summary #sync {
+  color: #e7e7e7;
+  font-size: 27px;
+}
+
+
+#card {
+  margin-bottom: 50px;
+}
+
+#card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#card ul #card {
+  margin-top: 50px;
+  width: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px lightgray;
+}
+
+#card ul #card:hover {
+  box-shadow: 0px 0px 40px #afafaf;
+}
+
+#card ul #card img {
+  height: 250px;
+  width: inherit;
+  object-fit: cover;
+}
+
+#card ul #card li {
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+  padding: 10px;
+}
+
+#card ul #card li #meal-item-name {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#card ul #card li #meal-item-description {
+  font-size: 20px;
+  color: #838383;
+  margin-top: 2px;
+}
+
+#card ul #card li #meal-item-price {
+  font-size: 20px;
+  color: #838383;
+  margin-top: 2px;
+  text-transform: lowercase;
+}
+
+#card ul #card li #meal-item-price i {
+  font-size: 17px;
+}
+
+#card ul #card div #form {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#card ul #card div #form input {
+  height: 30px;
+  width: 50px;
+  margin: 0;
+  outline: 0;
+  border: 0;
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #f0f2f5;
+  border-radius: 30px;
+  cursor: default;
+  box-shadow: 0px 0px 5px lightgray;
+}
+
+#card ul #card div #form input[type="number"]::-webkit-inner-spin-button,
+#card ul #card div #form input[type="number"]::-webkit-outer-spin-button {
+  height: 30px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+#card ul #card div #form button {
+  height: 50px;
+  width: 90px;
+  border: 0;
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #f0f2f5;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px lightgray;
+}
+
+#card ul #card div #form button:hover {
+  background-color: #dfdfdf;
+}
+#meals-loading{
+  text-align: center;
+  color: black;
+}
+#meals-error{
+  text-align: center;
+  color: red;
+}
